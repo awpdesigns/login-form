@@ -1,0 +1,202 @@
+/* Font Google - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+*, html {
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: #DAE6FC;
+}
+/* Override Bootstrap */
+a {
+    text-decoration: none;
+    color: #4781F1;
+}
+input:focus,
+button:focus {
+    box-shadow: none !important;
+}
+input::placeholder {
+    color: #a7b4c0 !important;
+    font-style: italic !important;
+}
+input:focus::placeholder {
+    font-style: normal !important;
+}
+input[type="checkbox"]:hover {
+    cursor: pointer;
+}
+.btn-primary,
+input[type="checkbox"]:checked,
+input[type="checkbox"]:valid:checked,
+input[type="checkbox"].is-valid:checked {
+    background-color: #4781F1 !important;
+    border-color: #4781F1;
+}
+.btn-primary:hover {
+    background-color: #3967C1;
+    border-color: #3967C1;
+}
+/* Form Input - Has Icon & Toggle Password + Override Form Control */
+.has-icon {
+    position: relative;
+}
+.has-icon .form-control {
+    padding-left: 2.375rem;
+}
+.has-icon .icon-control {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    text-align: center;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    font-size: 1.15rem;
+    color: #6E8396;
+}
+.has-icon .toggle-password {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    text-align: center;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    font-size: 1.15rem;
+    top: 1.5rem;
+    right: 0.25rem;
+    cursor: pointer;
+    color: #6E8396;
+}
+.was-validated .form-check-input:valid, .form-check-input.is-valid,
+.was-validated .form-control:valid, .form-control.is-valid,
+.was-validated .form-check-input:valid ~ .form-check-label,
+.form-check-input.is-valid ~ .form-check-label,
+.was-validated .form-check-input:invalid, .form-check-input.is-invalid,
+.was-validated .form-control:invalid, .form-control.is-invalid,
+.was-validated .form-check-input:invalid ~ .form-check-label, .form-check-input.is-invalid ~ .form-check-label {
+    color: #212529;
+    border-color: #ced4da;
+}
+.was-validated .toggle-on:invalid ~ .toggle-password,
+.toggle-on.is-invalid ~ .toggle-password,
+.was-validated .toggle-on:valid ~ .toggle-password,
+.toggle-on.is-valid ~ .toggle-password {
+    padding-right: 3.25rem;
+}
+
+.was-validated .toggle-on:valid,
+.toggle-on.is-valid,
+.was-validated .toggle-on:invalid,
+.toggle-on.is-invalid {
+    padding-right: 3.5rem !important;
+}
+/* Animation - Hover Up */
+.hover-up {
+    transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+@media (prefers-reduced-motion: reduce) {
+    .hover-up {
+    transition: none;
+    }
+}
+.hover-up:hover {
+    transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+    transform: translateY(-5px);
+}
+@media (prefers-reduced-motion: reduce) {
+    .hover-up:hover {
+    transition: none;
+    }
+}
+/* Divider - Strike */
+.strike {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.strike > * {
+    position: relative;
+    display: inline-block;
+    color: #6E8396;
+}
+.strike > *:before, .strike > *:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    height: 1px;
+    background: #E2E5EA;
+}
+.strike > *:before {
+    right: 100%;
+    margin-right: 1rem;
+}
+.strike > *:after {
+    left: 100%;
+    margin-left: 1rem;
+}
+
+/* Social Account */
+.social-account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.social-account .btn-icon {
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #E2E5EA;
+    border: none;
+}
+.social-account .btn-icon:hover {
+    background-color: #6E8396;
+}
+.social-account .btn-icon:hover > * {
+    color: #E2E5EA;
+}
+.social-account .btn-icon > * {
+    color: #6E8396;
+}
+
+.social-account .btn-facebook {
+    background-color: #cfe2ff;
+}
+.social-account .btn-facebook:hover {
+    background-color: #0d6efd;
+}
+.social-account .btn-facebook > * {
+    color: #0d6efd;
+}
+
+.social-account .btn-twitter {
+    background-color: #cff4fc;
+}
+.social-account .btn-twitter:hover {
+    background-color: #0dcaf0;
+}
+.social-account .btn-twitter > * {
+    color: #0dcaf0;
+}
+
+.social-account .btn-google {
+    background-color: #f8d7da;
+}
+.social-account .btn-google:hover {
+    background-color: #dc3545;
+}
+.social-account .btn-google > * {
+    color: #dc3545;
+}
+
+.social-account .btn-facebook:hover > *,
+.social-account .btn-twitter:hover > *,
+.social-account .btn-google:hover > * {
+    color: #FFFFFF;
+}
